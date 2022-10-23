@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nrml xmlns="http://openquake.org/xmlns/nrml/0.4" xmlns:gml="http://www.opengis.net/gml">
+	<sourceModel name="Sydney_Basin">
+		<simpleFaultSource id="0" name="Luna_Park" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						151.2622539	-33.7660706
+						151.2504819	-33.7797468
+						151.2251786	-33.8224734
+						151.2096835	-33.848205
+						151.1958104	-33.8704717
+						150.9921793	-34.0724721
+					</gml:posList> <!-- adjust these values-->
+				</gml:LineString>
+				<dip>80.0</dip> <!-- confirm this-->
+				<upperSeismoDepth>0.001</upperSeismoDepth> <!-- these values reflect what was said by Denham 1992-->
+				<lowerSeismoDepth>20.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel> <!-- this was obtained from NSHA18 as they used this for all their faults. need to check if this is right-->
+			<ruptAspectRatio>1.5</ruptAspectRatio> <!-- no idea what this is (2) doesnt seem too important. it controls the geometry of the fault plane but theres very little information i can get from changing this. keep it as GA does it (or not?)-->
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake> <!-- probably in papers or database. predict reverse faulting by current stress info. look at newcastle fault stress. confirm how they define the rake-->
+		</simpleFaultSource>
+		
+		<simpleFaultSource id="1" name="Woolloomooloo" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						151.2803916	-33.7782325
+						151.2689821	-33.7951991
+						151.2395368	-33.8388401
+						151.2243771	-33.86620882
+						151.0760093	-34.0495665
+						151.0065585	-34.1808763
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>20.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+		
+		<simpleFaultSource id="2" name="Watsons_Bay" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						151.2979936	-33.8000716
+						151.2738481	-33.84976399
+						151.055199	-34.18012327
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>20.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+		
+		<simpleFaultSource id="3" name="Homebush_Bay" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						151.1352622	-33.77745305
+						151.089391	-33.83158101
+						150.9875516	-33.9952889
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>20.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>	
+		
+		<simpleFaultSource id="4" name="Glenbrook" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						150.6212086	-33.87340144
+						150.6248005	-33.7667895
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>6.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+		
+		<simpleFaultSource id="5" name="Yellow_Rock" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						150.6195795	-33.76348087
+						150.6395275	-33.68581347
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>6.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+		
+		<simpleFaultSource id="6" name="Frasers" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						150.6307903	-33.687415
+						150.6377195	-33.66176358
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>6.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+		
+		<simpleFaultSource id="7" name="Grose" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						150.6241545	-33.6512268
+						150.5960221	-33.5751814
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>6.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+		
+		<simpleFaultSource id="8" name="Burralow" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						150.6038496	-33.5848549
+						150.6017133	-33.5312658
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>6.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+		
+		<simpleFaultSource id="9" name="Kurrajong" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						150.6138754	-33.5449471
+						150.6439545	-33.4369877
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>6.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+		
+		<simpleFaultSource id="11" name="Nepean" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						150.6190188	-34.0135882
+						150.6306793	-33.9121204
+					</gml:posList>
+				</gml:LineString>
+				<dip>80.0</dip> 
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>6.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+	
+		<simpleFaultSource id="12" name="Lapstone Monocline" tectonicRegion="Non_cratonic">
+			<simpleFaultGeometry>
+				<gml:LineString>
+					<gml:posList>
+						150.692863583 -33.2551893867
+						150.69932823 -33.2920378784
+						150.702560554 -33.3553914219
+						150.676701964 -33.416805572
+						150.654722164 -33.4917954818
+						150.641792869 -33.5389874071
+						150.63791408 -33.591997516
+						150.643085798 -33.614623782
+						150.649550445 -33.6385429772
+						150.656661558 -33.6947854096
+						150.646318122 -33.7277551109
+						150.644378727 -33.758785419
+						150.644378727 -33.789169261
+						150.63791408 -33.8298965403
+						150.630802968 -33.8402399757
+						150.628217109 -33.8919571546
+						150.630156503 -33.9397955458
+						150.621105997 -33.9617753467
+						150.617227209 -34.0096137371
+						150.617873673 -34.055512734
+						150.61334842 -34.0729672814
+						150.608176702 -34.085250112
+						150.604297914 -34.1350278966
+						150.604297914 -34.1634723453
+						150.605590843 -34.1951491174
+						150.611409026 -34.2332905374
+						150.608176702 -34.2707854924
+						150.617873673 -34.3011693344
+						150.629510038 -34.321209742
+					</gml:posList>
+				</gml:LineString>
+				<dip>50.0</dip>
+				<upperSeismoDepth>0.001</upperSeismoDepth>
+				<lowerSeismoDepth>20.0</lowerSeismoDepth>
+			</simpleFaultGeometry>
+			<magScaleRel>Leonard2014_SCR</magScaleRel>
+			<ruptAspectRatio>1.5</ruptAspectRatio>
+			<YoungsCoppersmithMFD minMag="3.0" bValue="1.15" binWidth="0.1" characteristicMag="5.5" characteristicRate="0.01"/>
+			<rake>0</rake>
+		</simpleFaultSource>
+	</sourceModel>
+</nrml>
